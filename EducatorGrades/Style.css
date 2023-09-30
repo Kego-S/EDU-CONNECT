@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #E360CF, #F687A7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+.left-section {
+    padding: 20px;
+    background-color: #df6aa2;
+    order: 10; /* Change the order to move it to the start */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #d58ec7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px; /* Add some margin to the right of the right section */
+    order: 10; /* Change the order to move it to the end */
+}
+
+.grade-container {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}

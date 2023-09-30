@@ -1,1 +1,1 @@
-# EDU-CONNECT
+# TechEduConnect

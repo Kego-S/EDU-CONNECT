@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTechConnect</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="App.js"></script>
+    <link rel="stylesheet" href="Register.html">
+</head>
+<body>
+
+     <!-- START MAIN-->
+     
+      <!-- Logo -->
+    <img src="Images/LOGO-HACK 2.svg" alt="Logo" class="logo">
+
+    <div class="login-container">
+        <div class="card" id="maincard">
+            <div class="positive-section">
+                <!-- Left Section: Create New Account -->
+                <div class="left-section">
+                  <h2>Create New Account</h2>
+                  <button class="new-account-button" onclick="openRegistrationForm()">New Account</button>
+                </div>
+              </div>
+    
+            <div class="negative-section">
+                <!-- Right Section: Login as -->
+                <div class="right-section">
+                    <h2>Login As:</h2>
+                    <div class="login-button-container">
+                        <button class="login-button" onclick="openLoginForm()">Educator</button>
+                    </div>
+                    <div class="login-button-container">
+                        <button class="login-button" onclick="openRegistrationForm()">Learner</button>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div> 
+
+
+        <!-- Move all the modals beneath the main card so the blur (.blur-card in the styles.css) doesnt affect them  -->
+
+        <div id="registration-form-popup" class="modal">
+          <div class="modal-content">
+            <form action="/register" method="post">
+              <label for="email">Email</label>
+              <input type="email" name="email" required>
+              <label for="password">Password</label>
+              <input type="password" name="password" required>
+              <button type="submit">Register</button>
+            </form>
+          </div>
+      
+          <div class="modal-close">
+            <button onclick="closeRegistrationForm()">X</button>
+          </div>
+        </div>
+        
+        <div id="Login-form-popup" class="modal">
+                    <div class="modal-content">
+                      <form action="/register" method="post">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" required>
+                        <button type="submit">Login</button>
+                      </form>
+                    </div>
+                
+                    <div class="modal-close">
+                      <button onclick="closeLoginForm()">X</button>
+                    </div>
+                  </div>
+                </div>    
+                
+                <div id="registration-form-popup" class="modal">
+                    <div class="modal-content">
+                      <form action="/login" method="post">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" required>
+                        <button type="submit">Login</button>
+                      </form>
+                    </div>
+                
+                    <div class="modal-close">
+                      <button onclick="closeRegistrationForm()">X</button>
+                    </div>
+                  </div>
+    </div>
+    
+    <!-- Forgot Password Link -->
+    <p class="forgot-password">
+        <a href="#">I forgot my password</a>
+    </p>
+    
+    <script src="script.js"></script>
+    
+
+    
+      <!-- END MAIN-->
+</body>
+</html>

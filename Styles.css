@@ -1,0 +1,133 @@
+/* Main Styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background: radial-gradient(ellipse at center, #0b0144 0%, #000000 100%);
+	color: #ffffff; /* Text color */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-size: 1000px 1000px;
+	background: radial-gradient(
+		256.05% 134.21% at -22.86% 47.17%,
+		#c15bdc 2.66%,
+		#d555ff 2.83%,
+		#f46e95 47.4%,
+		#f95a7e 81.77%,
+		#f9708e 98.45%,
+		#ea89ad 98.91%
+	);
+}
+
+/* Centering the login box */
+.login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	padding-top: 20px;
+	flex-direction: column;
+}
+
+/* Styling for the card */
+.card {
+	background-color: #fff;
+	box-shadow: 30px 25px 40px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	display: flex;
+	overflow: hidden;
+	max-width: 800px; /* Increase the max-width to make it bigger */
+	width: 95%;
+	margin: 30px; /*margin to center the card */
+	height: 350px;
+}
+
+/* Styling for the positive section (Create New Account) */
+.positive-section {
+	background-color: #f687a7;
+	flex: 1;
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.positive-section h2 {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 20px; /* margin below the title */
+}
+
+.new-account-button {
+	background-color: #ff69b4;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Styling for the negative section (Login as) */
+.negative-section {
+	background-color: #fa8ea7;
+	flex: 1;
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.negative-section h2 {
+	color: #8f38ac;
+	font-size: 18px;
+	margin-bottom: 20px; /* margin below the title */
+}
+
+.login-button {
+	background-color: #8f38ac;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 10px;
+	margin-bottom: 10px; /* margin between the buttons */
+}
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 10;
+}
+
+.modal-content {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 400px;
+	padding: 20px;
+	background-color: rgba(246, 135, 167, 0.1);
+}
+
+.modal-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.blur-card {
+	filter: blur(200px);
+}
