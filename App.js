@@ -1,6 +1,7 @@
 function openRegistrationForm() {
 	var registrationFormPopup = document.getElementById(
 		'registration-form-popup'
+		
 	);
 	registrationFormPopup.style.display = 'block';
 

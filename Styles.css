@@ -98,36 +98,82 @@ body {
 	margin-right: 10px;
 	margin-bottom: 10px; /* margin between the buttons */
 }
+/* Add this to center the modal container */
+.modal_container {
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Update the modal styles */
 .modal {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.5);
-	z-index: 10;
+    position: relative;
+    height: 500px;
+    width: 400px;
+    background: radial-gradient(
+        256.05% 134.21% at -22.86% 47.17%,
+        #c15bdc 2.66%,
+        #d555ff 2.83%,
+        #f46e95 47.4%,
+        #f95a7e 81.77%,
+        #f9708e 98.45%,
+        #ea89ad 98.91%
+    );
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    align-items: center;
+    color: #510d67;
 }
 
-.modal-content {
-	position: absolute;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 500px;
-	height: 400px;
-	padding: 20px;
-	background-color: rgba(246, 135, 167, 0.1);
+.modal input {
+    border: 1px solid white;
+    height: 50px;
+    background: none;
+    margin-top: 20px;
+    color: white;
+    padding: 5px 10px;
+    width: 90%;
 }
 
-.modal-close {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 10px;
-	cursor: pointer;
+.modal input::placeholder {
+    color: whitesmoke;
 }
 
-.blur-card {
-	filter: blur(200px);
+.modal button[type='submit'] {
+    height: 50px;
+    width: 95%;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    background-color: #510d67;
 }
+
+.modal span {
+    margin-top: 10px;
+}
+
+/* Adjust the close button style */
+.modal .close_btn {
+    position: absolute;
+    top: 40px; /* Adjust the top position */
+    right: 40px; /* Adjust the right position */
+    border-radius: 100px;
+    height: 40px;
+    display: flex;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: 0;
+    background-color: #510d67;
+}
+
