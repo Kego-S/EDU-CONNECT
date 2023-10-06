@@ -32,45 +32,71 @@
                         <button class="login-button" onclick="openLoginForm()">Educator</button>
                     </div>
                     <div class="login-button-container">
-                        <button class="login-button" onclick="openRegistrationForm()">Learner</button>
+                        <button class="login-button" onclick="openLoginForm()">Learner</button>
                     </div>
                    </div>
                 </div>
             </div>
         </div> 
+
+        
         <!-- Move all the modals beneath the main card so the blur (.blur-card in the styles.css) doesnt affect them  -->
         
-        <div id="Login-form-popup" class="modal">
+        <div id="Login-form-popup" style="position:fixed;top:0px;left: 0px;width:100vw;height: 100vh;display:none;justify-content: center;align-items: center" class="modal">
+          <div class="modal-content">
+            <form style="box-shadow: 30px 25px 40px rgba(0, 0, 0, 0.3);padding: 20px;background:radial-gradient(
+              256.05% 134.21% at -22.86% 47.17%,
+              #c15bdc 2.66%,
+              #d555ff 2.83%,
+              #f46e95 47.4%,
+              #f95a7e 81.77%,
+              #f9708e 98.45%,
+              #ea89ad 98.91%
+          );width:550px;position:relative;border-radius: 10px;" action="/login" method="post">
+          <center>
+              <label style="float:left;margin-left: 20px;" for="email">Email:</label>
+              <input style="border: .1px solid #fff;margin-bottom: 15px;" type="email" name="email" required>
+              <label style="float:left;margin-left: 20px;" for="password">Password:</label>
+              <input style="border: .1px solid #fff;"  type="password" name="password" required>
+              <button style="border:none;border-radius: 5px;" type="submit">Login</button>
+              
+          <div class="modal-close" style="position:absolute;top:10px;right:10px;cursor:pointer">
+            <span onclick="closeLoginForm()">X</span>
+          </div></center>
+            </form>
+          </div>
+      
+        </div>
+                
+                <div id="registration-form-popup" style="position:fixed;top:0px;left: 0px;width:100vw;height: 100vh;display:none;justify-content: center;align-items: center" class="modal">
                     <div class="modal-content">
-                      <form action="/register" method="post">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" required>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" required>
-                        <button type="submit">Login</button>
+                      <form style="box-shadow: 30px 25px 40px rgba(0, 0, 0, 0.3);padding: 20px;background:radial-gradient(
+                        256.05% 134.21% at -22.86% 47.17%,
+                        #c15bdc 2.66%,
+                        #d555ff 2.83%,
+                        #f46e95 47.4%,
+                        #f95a7e 81.77%,
+                        #f9708e 98.45%,
+                        #ea89ad 98.91%
+                    );width:550px;position:relative;border-radius: 10px;" action="/login" method="post">
+                    <center>
+                      <label style="float:left;margin-left: 20px;" for="email">Name:</label>
+                        <input style="border: .1px solid #fff;margin-bottom: 15px;" type="email" name="email" required>
+                        <label style="float:left;margin-left: 20px;" for="email">Surname:</label>
+                        <input style="border: .1px solid #fff;margin-bottom: 15px;" type="email" name="email" required>
+                        
+                        <label style="float:left;margin-left: 20px;" for="email">Email:</label>
+                        <input style="border: .1px solid #fff;margin-bottom: 15px;" type="email" name="email" required>
+                        <label style="float:left;margin-left: 20px;" for="password">Password:</label>
+                        <input style="border: .1px solid #fff;"  type="password" name="password" required>
+                        <button style="border:none;border-radius: 5px;" type="submit">Register</button>
+                        
+                    <div class="modal-close" style="position:absolute;top:10px;right:10px;cursor:pointer">
+                      <span onclick="closeRegistrationForm()">X</span>
+                    </div></center>
                       </form>
                     </div>
                 
-                    <div class="modal-close">
-                      <button onclick="closeLoginForm()">X</button>
-                    </div>
-                  </div>
-                </div>    
-                
-                <div id="registration-form-popup" class="modal">
-                    <div class="modal-content">
-                      <form action="/login" method="post">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" required>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" required>
-                        <button type="submit">Login</button>
-                      </form>
-                    </div>
-                
-                    <div class="modal-close">
-                      <button onclick="closeRegistrationForm()">X</button>
-                    </div>
                   </div>
     </div>
     

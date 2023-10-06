@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['Register'])) {
         $
 
 //   Validate the data before accepting it into the system
-        if (empty($name) || || empty($surname) || empty($username) || empty($pwd) || empty($email) empty($created_at)) {
+        if (empty($name) || || empty($surname) || empty($username) || empty($pwd) || empty($email) || empty($created_at)) {
             $error = 'Please fill in the all the fields';
         } else {
             // check if the email already is registered

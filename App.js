@@ -3,7 +3,7 @@ function openRegistrationForm() {
 		'registration-form-popup'
 		
 	);
-	registrationFormPopup.style.display = 'block';
+	registrationFormPopup.style.display = 'flex';
 
 	// so what this does is it gets the card div with id of maincard and adds the blur-card(which has filter blur) css class to it
 	document.getElementById('maincard').classList.add('blur-card');
@@ -20,7 +20,7 @@ function closeRegistrationForm() {
 
 function openLoginForm() {
 	var loginformpopup = document.getElementById('Login-form-popup');
-	loginformpopup.style.display = 'block';
+	loginformpopup.style.display = 'flex';
 	document.getElementById('maincard').classList.add('blur-card');
 }
 
