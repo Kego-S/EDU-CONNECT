@@ -1,52 +1,68 @@
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #E360CF, #F687A7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
 .container {
-    display: flex;
+  width: 350px;
+  height: 120px;
+  margin: 10px;
+  padding: 20px;
+  color: purple;
+  text-align: center;
+  cursor: pointer;
 }
 
-.left-section {
-    padding: 20px;
-    background-color: #df6aa2;
-    order: 10; /* Change the order to move it to the start */
+#image-container {
+  flex: 0 0 450px; /* Adjust the width of the image container */
+  margin-right: 20px;
+  overflow: hidden;
+  text-align: center; /* Center the image horizontally */
+  margin-right: 100px; /* Adjust as needed to create space between the image and the grade container */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+
+#image-container img {
+  width: 100%; /* Set it back to 100% to ensure it fits within the container */
+  height: auto; /* This will maintain the aspect ratio of the image */
+  display: block;
 }
 
-button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #d58ec7;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    display: block;
-}
-
-.right-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 50px; /* Add some margin to the right of the right section */
-    order: 10; /* Change the order to move it to the end */
+#learn-more-btn {
+  background: linear-gradient(to bottom, #f92672, #ea43de);
+  border-radius: 6px; /* Rounded corners for each grade box */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center; /* Center the button horizontally */
+  margin-top: 100px; /* Adjust as needed to create space between the image and the button */
 }
 
 .grade-container {
-    width: 200px;
-    height: 100px;
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 95px; /* Adjust as needed */
+}
+
+.grade-container .container {
+  width: 300px; /* Adjust as needed */
+  height: 80px; /* Adjust as needed */
+  margin: 10px;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #f92672, #ea43de);
+  border-radius: 6px; /* Rounded corners for each grade box */
 }
