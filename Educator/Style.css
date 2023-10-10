@@ -4,7 +4,11 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f0f0f0;
+  background: radial-gradient(
+    256.05% 134.21% at -22.86% 47.17%,
+    #E360CF,
+    #F687A7 2.83%
+  );
 }
 
 .container {
@@ -19,10 +23,15 @@ body {
 
 #image-container {
   flex: 0 0 450px; /* Adjust the width of the image container */
+  flex-direction: column-reverse;
   margin-right: 20px;
   overflow: hidden;
   text-align: center; /* Center the image horizontally */
-  margin-right: 100px; /* Adjust as needed to create space between the image and the grade container */
+  margin-left: 300px; /* Adjust as needed to create space between the image and the grade container */
+  margin-bottom: 600px;/* moving them to the top*/
+
+  
+
 }
 
 
@@ -30,6 +39,7 @@ body {
   width: 100%; /* Set it back to 100% to ensure it fits within the container */
   height: auto; /* This will maintain the aspect ratio of the image */
   display: block;
+  margin-top: 600px;
 }
 
 #learn-more-btn {
@@ -41,10 +51,15 @@ body {
   text-decoration: none;
   display: block;
   font-size: 16px;
-  margin-top: 20px;
+  margin-top: 60px;
+  flex: 1 0 auto;
   cursor: pointer;
   text-align: center; /* Center the button horizontally */
-  margin-top: 100px; /* Adjust as needed to create space between the image and the button */
+  
+  
+  
+ 
+
 }
 
 .grade-container {
@@ -52,14 +67,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-right: 95px; /* Adjust as needed */
+  margin-right: 250px; /* Adjust as needed  bringing them closer*/
+  
+
 }
 
 .grade-container .container {
   width: 300px; /* Adjust as needed */
   height: 80px; /* Adjust as needed */
   margin: 10px;
-  padding: 15px;
+  padding: 40px;
   color: #fff;
   text-align: center;
   cursor: pointer;
