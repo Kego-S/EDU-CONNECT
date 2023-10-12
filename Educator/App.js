@@ -5,5 +5,5 @@ function learnMore() {
 }
 function redirectToGradePage(grade) {
       // Replace with the actual URLs for the grade pages
-      window.location.href = "URL_TO_GRADE_" + grade + "_PAGE";
+      window.location.href = "Grade" + grade + ".html";
     }
