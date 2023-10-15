@@ -19,8 +19,8 @@ body {
   color: purple;
   text-align: center;
   cursor: pointer;
+  text-decoration: none; /* Remove underline for grade links */
 }
-
 #image-container {
   flex: 0 0 450px; /* Adjust the width of the image container */
   flex-direction: column-reverse;
@@ -85,5 +85,5 @@ body {
   cursor: pointer;
   background: linear-gradient(to bottom, #f92672, #ea43de);
   border-radius: 6px; /* Rounded corners for each grade box */
-  
+  text-decoration: none; /* Remove underline for grade links */
 }
