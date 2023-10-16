@@ -1,52 +1,80 @@
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #E360CF, #F687A7);
     display: flex;
+    justify-content: start;
     align-items: center;
-    justify-content: center;
     height: 100vh;
-}
-
-.container {
-    display: flex;
-}
-
-.left-section {
-    padding: 20px;
-    background-color: #df6aa2;
-    order: 10; /* Change the order to move it to the start */
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #d58ec7;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    display: block;
-}
-
-.right-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 50px; /* Add some margin to the right of the right section */
-    order: 10; /* Change the order to move it to the end */
-}
-
-.grade-container {
-    width: 200px;
-    height: 100px;
-    border: 1px solid #ccc;
+    margin: 0;
+    background: radial-gradient(
+      256.05% 134.21% at -22.86% 47.17%,
+      #E360CF,
+      #F687A7 2.83%
+    );
+  }
+  
+  .container {
+    width: 350px;
+    height: 120px;
     margin: 10px;
+    padding: 20px;
+    color: purple;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline for grade links */
+  }
+  #image-container {
+    flex: 0 0 450px; /* Adjust the width of the image container */
+    flex-direction: column-reverse;
+    margin-right: 200px;
+    overflow: hidden;
+    text-align: center; /* Center the image horizontally */
+    margin-left: 100px; /* Adjust as needed to create space between the image and the grade container */
+    margin-bottom: 600px;/* moving them to the top*/
+    
+  
+  }
+  
+  
+  #image-container img {
+    width: 100%; /* Set it back to 100% to ensure it fits within the container */
+    height: auto; /* This will maintain the aspect ratio of the image */
+    display: block;
+    margin-top: 600px;
+  }
+  
+  #learn-more-btn {
+    background: linear-gradient(to bottom, #f92672, #ea43de);
+    border-radius: 6px; /* Rounded corners for each grade box */
+    color: white;
     padding: 10px;
     text-align: center;
-}
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-top: 60px;
+    flex: 1 0 auto;
+    cursor: pointer;
+    text-align: center; /* Center the button horizontally */
+  }
+  
+  .grade-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 200px; /* Adjust as needed  bringing them closer*/
+    justify-content: space-around;
+  }
+  
+  .grade-container .container {
+    width: 300px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    margin: 10px;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #f92672, #ea43de);
+    border-radius: 6px; /* Rounded corners for each grade box */
+    text-decoration: none; /* Remove underline for grade links */
+  }
+  
