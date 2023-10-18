@@ -1,7 +1,9 @@
 body{
-    background-image: linear-gradient(to bottom, #F85D81, #9A2CBE);
-}
+    background-image: linear-gradient(pink, purple);
+    height: 100vh;
+    position: relative;
 
+}
 .about-us {
     padding: 20px;
   }
@@ -9,6 +11,7 @@ body{
   .about-us h2 {
     font-size: 32px;
     font-weight: bold;
+    text-align: center;
   }
   
   .about-us p {
