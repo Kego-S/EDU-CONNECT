@@ -1,0 +1,49 @@
+body {
+    background-image: linear-gradient(to bottom, #F85D81, #9A2CBE);
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: #ff5722;
+  }
