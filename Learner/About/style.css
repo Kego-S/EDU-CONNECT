@@ -1,0 +1,70 @@
+body{
+    background-image: linear-gradient(pink, purple);
+    height: 100vh;
+    position: relative;
+
+}
+.about-us {
+    padding: 20px;
+  }
+  
+  .about-us h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .about-us p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .who-we-are {
+    padding: 20px;
+  }
+  
+  .who-we-are h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .who-we-are p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* Position the containers side by side */
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .mission, .vision, .approach {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+     /* Make the containers the same width */
+    flex: 1;
+  }
+  /* Position the mission and vision containers on the left */
+.mission, .vision {
+    margin-right: 20px;
+  }
+  
+  .mission h1, .vision h1, .approach h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .mission p, .vision p, .approach p {
+    font-size: 16px;
+    line-height: 24px;
+  }
