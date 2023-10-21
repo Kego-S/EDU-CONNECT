@@ -47,3 +47,13 @@ body {
   .button:hover {
     background-color: #ff5722;
   }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
